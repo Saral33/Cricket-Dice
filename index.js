@@ -18,7 +18,7 @@ document.querySelector('.btn-roll').addEventListener('click',function(){  // Rol
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.add('active');
 
-    document.querySelector('#update').innerText=finalscore[activePlayer];     // to update the target
+    document.querySelector('#update').innerText=finalscore[0] + 1;     // to update the target
      activePlayer=1;
      
      if(moves[1]>0){                          // run until moves=0 
@@ -74,6 +74,7 @@ function Initialization(){
    document.querySelector('#final-1').innerText='0';
    document.querySelector('#winner').style.display='none';
    document.querySelector('.player-0-panel').classList.add('active');
+   document.querySelector('#update').innerText='0';
    }
    
    // The End . HAPPY CODING
